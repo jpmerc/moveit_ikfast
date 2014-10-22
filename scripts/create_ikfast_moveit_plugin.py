@@ -80,7 +80,8 @@ if __name__ == '__main__':
 
    # Setup key package directories
    try:
-      plan_pkg = robot_name + '_moveit_config'
+      plan_pkg = 'wpi_' + robot_name + '_config'
+      #plan_pkg = robot_name + '_moveit_config'
       plan_pkg_dir = roslib.packages.get_pkg_dir(plan_pkg)
       print 'Loading robot from \''+plan_pkg+'\' package ... '
    except:
